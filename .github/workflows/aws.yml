@@ -52,7 +52,7 @@ jobs:
       - run: npm run test
       
       - name: rsync deployments
-        uses: burnett01/rsync-deployment@5.2
+        uses: burnett01/rsync-deployments@5.2
         with:
           switches: -azr --delete
           path: ./*
